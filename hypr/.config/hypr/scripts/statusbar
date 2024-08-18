@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+## Launch Waybar
+
+WAYBAR_CONFIG="$HOME/.config/waybar/config.jsonc"
+WAYBAR_STYLE="$HOME/.config/waybar/style.css"
+
+if [[ ! `pidof waybar` ]]; then
+	waybar --bar main-bar --log-level error --config ${WAYBAR_CONFIG} --style ${WAYBAR_STYLE}
+fi
