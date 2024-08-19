@@ -1,0 +1,160 @@
+[
+  {
+    "layer": "top",
+    "position": "top",
+    "output": ["DP-1", "HDMI-A-1", "eDP-1"],
+    "margin": "6px 4px 0px 4px",
+    "modules-left": ["custom/launcher", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": [
+      "bluetooth",
+      "network",
+      "group/sys-tray",
+      "custom/powermenu"
+    ],
+    "hyprland/workspaces": {
+      "active-only": false,
+      "all-outputs": true,
+      "format": "{icon}",
+      "format-icons": {
+        "active": " 󰮯 ",
+        "default": "󰊠",
+        "persistent": "󰊠"
+      },
+      "on-click": "activate",
+      "on-scroll-up": "hyprctl dispatch workspace e+1",
+      "on-scroll-down": "hyprctl dispatch workspace e-1",
+      "show-special": false,
+      "persistent-workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      }
+    },
+    "clock": {
+      "interval": 60,
+      "align": 0,
+      "rotate": 0,
+      "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+      "format": "{:%I:%M %p}",
+      "format-alt": "{:%a %b %d}"
+    },
+    "clock#vertical": {
+      "interval": 60,
+      "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+      "format": "{:%I\n%M}"
+    },
+    "bluetooth": {
+      "format": " on",
+      "format-connected": " {device_alias}",
+      "format-off": " off",
+      "tooltip": true,
+      "tooltip-format": "Bluetooth",
+      "on-click": "~/.config/hypr/scripts/rofi_bluetooth",
+      "on-click-right": "blueman-manager"
+    },
+    "network": {
+      "format-wifi": "{icon} {essid}",
+      "format-ethernet": "󰈁 {ifname}",
+      "format-disconnected": "󰖪",
+      "tooltip-format": "Connected to {essid}/{ifname}",
+      "on-click": "~/.config/hypr/scripts/rofi_network",
+      "on-click-right": "nm-connection-editor",
+      "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "]
+    },
+    "custom/launcher": {
+      "format": "",
+      // "on-click": "exec $HOME/.config/hypr/scripts/launcher.sh",
+      "on-click": "$HOME/.config/hypr/scripts/rofi_launcher",
+      "tooltip": false
+    },
+    "custom/powermenu": {
+      "format": "⏻",
+      // "on-click": "wlogout -b 5",
+      "on-click": "$HOME/.config/hypr/scripts/rofi_powermenu",
+      "tooltip": false
+    },
+    "custom/wallpaper": {
+      "format": "",
+      "on-click": "~/.config/hypr/scripts/wallpaperSelect.sh"
+    },
+    "group/sys-tray": {
+      "orientation": "horizontal",
+      "modules": [
+        "group/battery-grp",
+        "group/pulseaudio-grp",
+        "group/backlight-grp"
+      ]
+    },
+    "group/pulseaudio-grp": {
+      "orientation": "horizontal",
+      "modules": ["pulseaudio", "pulseaudio#text"]
+    },
+    "group/battery-grp": {
+      "orientation": "horizontal",
+      "modules": ["battery", "battery#text"]
+    },
+    "group/backlight-grp": {
+      "orientation": "horizontal",
+      "modules": ["backlight", "backlight#text"]
+    },
+    "pulseaudio": {
+      "tooltip": false,
+      "format": "{icon}",
+      "format-bluetooth": "{icon}",
+      "format-muted": " ",
+      "format-bluetooth-muted": " ",
+      "on-click": "pulsemixer --toggle-mute",
+      "format-icons": {
+        "default": [" ", " ", "󰕾 "]
+      }
+    },
+    "pulseaudio#text": {
+      "tooltip": false,
+      "format": "<b>{volume}</b>",
+      "format-bluetooth": "<b>{volume}</b>",
+      "format-muted": "Mute",
+      "format-bluetooth-muted": "Mute",
+      "on-click": "pulsemixer --toggle-mute"
+    },
+    "battery": {
+      "interval": 60,
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{icon}",
+      "format-icons": [" ", " ", " ", " ", " "],
+      "format-charging": " ",
+      "format-plugged": " ",
+      "max-length": 25,
+      "tooltip": false
+    },
+    "battery#text": {
+      "interval": 60,
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "<b>{capacity}</b>",
+      "max-length": 25,
+      "tooltip": false
+    },
+    "backlight": {
+      "device": "eDP-1",
+      "format": "{icon}",
+      "tooltip": false,
+      "format-icons": [" ", " ", " "],
+      "on-click": ""
+    },
+    "backlight#text": {
+      "device": "eDP-1",
+      "format": "<b>{percent}</b>",
+      "interval": 15,
+      "exec": "",
+      "tooltip": false
+    }
+  }
+]
