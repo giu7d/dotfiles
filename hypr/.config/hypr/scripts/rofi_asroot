@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
 # Import Current Theme
-DIR="$HOME/.config/hypr"
-RASI="$DIR/rofi/asroot.rasi"
-ASROOT="$DIR/scripts/asroot"
+RASI="$HOME/.config/rofi/asroot.rasi"
+ASROOT="$HOME/.config/hypr/scripts/asroot"
 USER=`whoami`
 
 # Theme Elements

@@ -5,7 +5,7 @@
 ## Script to take screenshots with grim, slurp (in Wayland)
 
 # Get Colors
-DIR="$HOME/.config/hypr"
+DIR="$HOME/.config"
 background="`cat $DIR/rofi/shared/colors.rasi | grep 'background:' | cut -d':' -f2 | tr -d ' '\;`"
 accent="`cat $DIR/rofi/shared/colors.rasi | grep 'selected:' | cut -d':' -f2 | tr -d ' '\;`"
 

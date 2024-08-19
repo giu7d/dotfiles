@@ -3,9 +3,8 @@
 ## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
 
 # Import Current Theme
-DIR="$HOME/.config/hypr"
-RASI="$DIR/rofi/powermenu.rasi"
-CNFR="$DIR/rofi/confirm.rasi"
+RASI="$HOME/.config/rofi/powermenu.rasi"
+CNFR="$HOME/.config/rofi/confirm.rasi"
 
 # Theme Elements
 prompt="`hostname` (`echo $DESKTOP_SESSION`)"
