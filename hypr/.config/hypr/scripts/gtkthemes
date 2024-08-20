@@ -1,21 +1,22 @@
 #!/usr/bin/env bash
 
-## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
-##
-## Set GTK Themes, Icons, Cursor and Fonts
+#
+# Setup GTK Theme
+#
+THEME				=	'Catppuccin-Mocha'
+THEME_SHADE	=	'prefer-dark'
+ICONS				=	'kora'
+FONT				= 'Noto Sans 9'
+CURSOR			= 'Qogirr'
 
-THEME='Manhattan'
-ICONS='Luv-Folders-Dark'
-FONT='Noto Sans 9'
-CURSOR='Qogirr-Dark'
-
-SCHEMA='gsettings set org.gnome.desktop.interface'
+COMMAND			= 'gsettings set org.gnome.desktop.interface'
 
 apply_themes () {
-	${SCHEMA} gtk-theme "$THEME"
-	${SCHEMA} icon-theme "$ICONS"
-	${SCHEMA} cursor-theme "$CURSOR"
-	${SCHEMA} font-name "$FONT"
+	${COMMAND} gtk-theme "$THEME"
+	${COMMAND} color-scheme "$THEME_SHADE"
+	${COMMAND} icon-theme "$ICONS"
+	${COMMAND} cursor-theme "$CURSOR"
+	${COMMAND} font-name "$FONT"
 }
 
 apply_themes
