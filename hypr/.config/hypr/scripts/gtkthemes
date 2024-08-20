@@ -3,13 +3,13 @@
 #
 # Setup GTK Theme
 #
-THEME				=	'Catppuccin-Mocha'
-THEME_SHADE	=	'prefer-dark'
-ICONS				=	'kora'
-FONT				= 'Noto Sans 9'
-CURSOR			= 'Qogirr'
+THEME='Catppuccin-Mocha'
+THEME_SHADE='prefer-dark'
+ICONS='kora'
+FONT='Noto Sans 9'
+CURSOR='Qogirr'
 
-COMMAND			= 'gsettings set org.gnome.desktop.interface'
+COMMAND='gsettings set org.gnome.desktop.interface'
 
 apply_themes () {
 	${COMMAND} gtk-theme "$THEME"
