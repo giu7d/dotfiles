@@ -4,6 +4,6 @@
 ##
 ## Set Wallpaper in Hyprland
 
-WALLPAPER='/home/giuseppe/Pictures/wallpapers/wallpaper_evening_sky.png'
+WALLPAPER='/home/giuseppe/.config/hypr/wallpapers/wallpaper.png'
 
 swaybg --output '*' --mode fill --image "$WALLPAPER"
