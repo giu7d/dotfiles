@@ -26,11 +26,11 @@ window {
     y-offset:                    0px;
     margin:                      0px;
     padding:                     0px;
-    border:                      2px solid;
+    border:                      0px solid;
     border-radius:               0px;
-    border-color:                @background-alt;
+    border-color:                @selected;
     cursor:                      "default";
-    background-color:            @background;
+    background-color:            black / 10%;
 }
 
 /*****----- Main Box -----*****/
@@ -46,7 +46,7 @@ mainbox {
 /*****----- Inputbar -----*****/
 inputbar {
     enabled:                     true;
-    spacing:                     10px;
+    spacing:                     4px;
     padding:                     0px;
     border:                      0px;
     border-radius:               0px;
@@ -58,19 +58,21 @@ inputbar {
 
 textbox-prompt-colon {
     enabled:                     true;
+    font:                        "feather 14";
     expand:                      false;
     str:                         "";
-    padding:                     10px 14px;
+    padding:                     0px 14px;
     border-radius:               0px;
-    background-color:            var(urgent);
-    text-color:                  @background;
+    background-color:            transparent;
+    text-color:                  @urgent;
 }
 prompt {
+    font:                        "feather 12";
     enabled:                     true;
-    padding:                     10px;
+    padding:                     1px;
     border-radius:               0px;
-    background-color:            var(active);
-    text-color:                  @background;
+    background-color:            transparent;
+    text-color:                  white / 90%;
 }
 
 /*****----- Message -----*****/
@@ -81,9 +83,10 @@ message {
     border:                      0px solid;
     border-radius:               0px;
     border-color:                @selected;
-    background-color:            @background-alt;
-    text-color:                  @foreground;
+    background-color:            transparent;
+    text-color:                  white / 75%;
 }
+
 textbox {
     background-color:            inherit;
     text-color:                  inherit;
@@ -116,6 +119,7 @@ element {
     text-color:                  @foreground;
     cursor:                      pointer;
 }
+
 element-text {
     font:                        "feather 20";
     background-color:            transparent;
@@ -127,8 +131,8 @@ element-text {
 
 element normal.normal,
 element alternate.normal {
-    background-color:            var(background-alt);
-    text-color:                  var(foreground);
+    background-color:            transparent;
+    text-color:                  white / 75%;
 }
 element normal.urgent,
 element alternate.urgent,
@@ -143,6 +147,6 @@ element selected.urgent {
     text-color:                  var(background);
 }
 element selected.normal {
-    background-color:            var(selected);
+    background-color:            var(urgent);
     text-color:                  var(background);
 }
