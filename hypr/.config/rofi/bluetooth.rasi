@@ -23,6 +23,7 @@ window {
     location:                    northeast;
     anchor:                      northeast;
     fullscreen:                  false;
+    height:                      500px;
     width:                       300px;
     x-offset:                    -14px;
     y-offset:                    0px;
@@ -81,13 +82,7 @@ textbox-prompt-colon {
 }
 
 entry {
-    enabled:                     true;
-    padding:                     8px 0px;
-    background-color:            inherit;
-    text-color:                  inherit;
-    cursor:                      text;
-    placeholder:                 "";
-    placeholder-color:           inherit;
+    enabled:                     false;
 }
 
 /*****----- Listview -----*****/
@@ -100,7 +95,7 @@ listview {
     scrollbar:                   false;
     layout:                      vertical;
     reverse:                     false;
-    fixed-height:                false;
+    fixed-height:                true;
     fixed-columns:               true;
     
     spacing:                     5px;
@@ -109,10 +104,10 @@ listview {
     cursor:                      "default";
 }
 scrollbar {
-    handle-width:                5px ;
-    handle-color:                @selected;
-    border-radius:               10px;
-    background-color:            @background-alt;
+    handle-width:                5px;
+    handle-color:                white / 5%;
+    border-radius:               0px;
+    background-color:            black / 10%;
 }
 
 /*****----- Elements -----*****/

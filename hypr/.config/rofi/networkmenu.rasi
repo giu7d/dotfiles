@@ -20,23 +20,24 @@ configuration {
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    center;
-    anchor:                      center;
+    location:                    northeast;
+    anchor:                      northeast;
     fullscreen:                  false;
-    width:                       500px;
-    height:                      495px;
-    x-offset:                    0px;
+    height:                      500px;
+    width:                       300px;
+    x-offset:                    -14px;
     y-offset:                    0px;
+
 
     /* properties for all widgets */
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border:                      2px solid;
+    border:                      0px solid;
     border-radius:               0px;
-    border-color:                @background-alt;
+    border-color:                @selected;
     cursor:                      "default";
-    background-color:            @background;
+    background-color:            black / 10%;
 }
 
 /*****----- Main Box -----*****/
@@ -63,28 +64,26 @@ inputbar {
 
 prompt {
     enabled:                     true;
-    padding:                     8px;
+    font:                        "feather 12";
+    padding:                     0px;
     border-radius:               0px;
-    background-color:            var(active);
-    text-color:                  @background;
+    background-color:            transparent;
+    text-color:                  white;
 }
+
 textbox-prompt-colon {
     enabled:                     true;
+    font:                        "feather 14";
     expand:                      false;
-    str:                         "直";
-    padding:                     8px 11px;
+    str:                         "直 ";
+    padding:                     0px;
     border-radius:               0px;
-    background-color:            var(urgent);
-    text-color:                  @background;
+    background-color:            transparent;
+    text-color:                  white;
 }
+
 entry {
-    enabled:                     true;
-    padding:                     8px 0px;
-    background-color:            inherit;
-    text-color:                  inherit;
-    cursor:                      text;
-    placeholder:                 "";
-    placeholder-color:           inherit;
+    enabled:                     false;
 }
 
 /*****----- Listview -----*****/
@@ -105,11 +104,12 @@ listview {
     text-color:                  @foreground;
     cursor:                      "default";
 }
+
 scrollbar {
-    handle-width:                5px ;
-    handle-color:                @selected;
-    border-radius:               10px;
-    background-color:            @background-alt;
+    handle-width:                5px;
+    handle-color:                white / 5%;
+    border-radius:               0px;
+    background-color:            black / 10%;
 }
 
 /*****----- Elements -----*****/
@@ -125,7 +125,7 @@ element {
 }
 element normal.normal,
 element alternate.normal {
-    background-color:            var(background);
+    background-color:            transparent;
     text-color:                  var(foreground);
 }
 element normal.urgent,
