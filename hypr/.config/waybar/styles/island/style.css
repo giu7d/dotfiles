@@ -5,7 +5,7 @@ window#waybar {
 }
 
 window > box {
-  background-color: @theme_base_color;
+  background-color: alpha(@base, 0.9);
   margin: 6px 8px;
 }
 
@@ -33,13 +33,13 @@ window > box {
 #network.wifi,
 #custom-powermenu,
 box#sys-tray {
-  color: @theme_selected_bg_color;
+  color: @peach;
   margin: 2px;
-  background-color: @theme_base_color;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #custom-launcher {
-  color: @theme_selected_bg_color;
+  color: @mauve;
   padding-left: 14px;
   padding-right: 4px;
 }
@@ -49,13 +49,13 @@ box#sys-tray {
 }
 
 #workspaces button {
-  color: @subtext1;
+  color: @text;
   padding: 0px 5px;
 }
 
 #workspaces button.active {
   color: @base;
-  background-color: @theme_selected_bg_color;
+  background-color: @mauve;
 }
 
 #workspaces button.urgent {
@@ -63,7 +63,7 @@ box#sys-tray {
 }
 
 #workspaces button:hover {
-  color: @theme_selected_bg_color;
+  color: @mauve;
   background-color: @base;
 }
 
@@ -72,19 +72,19 @@ box#sys-tray {
 }
 
 #backlight {
-  color: @subtext1;
+  color: @text;
 }
 
 #pulseaudio {
-  color: @subtext1;
+  color: @text;
 }
 
 #battery {
-  color: @subtext1;
+  color: @text;
 }
 
 .pulseaudio-grp {
-  color: @subtext1;
+  color: @text;
 }
 
 #battery.text {
@@ -109,16 +109,16 @@ box#sys-tray {
 #bluetooth,
 #bluetooth.off,
 #bluetooth.on {
-  color: @subtext1;
+  color: @text;
   padding: 2px 4px 2px 10px;
   margin: 2px;
-  background-color: @theme_base_color;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #network,
 #network.disconnected,
 #network.disabled {
-  color: @subtext1;
+  color: @text;
   padding: 2px 8px;
 }
 
@@ -128,24 +128,25 @@ box#sys-tray {
 }
 
 #custom-powermenu {
-  color: @theme_selected_bg_color;
+  color: @red;
   padding-right: 14px;
+  font-size: 18px;
 }
 
 tooltip {
   padding: 25px;
   background-color: @base;
-  color: @overlay0;
+  color: @text;
   font-family: "JetBrains Mono";
 }
 
 tooltip label {
   padding: 15px;
-  color: @foreground;
+  color: @text;
 }
 
 label:focus {
-  background-color: @background;
+  background-color: @text;
 }
 
 #clock {
