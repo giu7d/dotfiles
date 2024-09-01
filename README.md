@@ -43,8 +43,14 @@ Finally apply the GTK theme to flatpaks:
 
 ```sh
 sudo flatpak override --filesystem=$HOME/.themes
-sudo flatpak override --env=GTK_THEME=Catppuccin-Mocha 
+sudo flatpak override --env=GTK_THEME=MonoThemeDark
 ```
+
+**Obs.:** We are using [Mono-gtk-theme](https://github.com/witalihirsch/Mono-gtk-theme) for the GTK, Gnome Shell. You can access their docs for any extra settings.
+
+#### Change Firefox appearance
+
+To use Mono theme with firefoxfollow the [theme docs](https://github.com/witalihirsch/Mono-firefox-theme).
 
 #### Change Home Wallpaper
 
