@@ -3,7 +3,7 @@
 #
 # Setup GTK Theme
 #
-THEME='Catppuccin-Mocha'
+THEME='MonoThemeDark'
 THEME_SHADE='prefer-dark'
 ICONS='kora'
 FONT='Noto Sans 9'
