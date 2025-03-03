@@ -9,5 +9,5 @@ alias mv='mv -v'
 alias mkdir='mkdir -p'
 
 # Update aliases
-alias update='yay'  # Check system and AUR updates
+alias update='yay -Syu'  # Check system and AUR updates
 alias updatef='flatpak update'
