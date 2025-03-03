@@ -3,10 +3,10 @@
 #
 # Setup ASDF
 #
+export ASDF_DIR="${ASDF_DATA_DIR:-$HOME/.asdf}"
 
-# Start asdf script
-# . "$HOME/.asdf/asdf.sh"
+# Add shims to PATH 
+export PATH="${ASDF_DIR}/shims:$PATH"
 
 # Bind asdf completions to ZSH compinit
-# Ensure compinit is below your sourcing of asdf.sh
-# fpath=(${ASDF_DIR}/completions $fpath)
+fpath=(${ASDF_DIR}/completions $fpath)
