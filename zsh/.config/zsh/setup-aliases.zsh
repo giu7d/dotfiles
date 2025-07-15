@@ -11,7 +11,3 @@ alias mkdir='mkdir -p'
 # Vim aliases
 alias vim='nvim'
 alias edit='nvim'
-
-# Update aliases
-alias update='yay -Syu'  # Check system and AUR updates
-alias updatef='flatpak update'
