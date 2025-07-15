@@ -3,3 +3,7 @@ zsh/.config/zsh/.zcompdump*
 zsh/.config/zsh/ohmyzsh
 zsh/.local/state/zsh/history
 zsh/.local/state/zsh/zcompdump*
+
+# Git
+# Protected files
+git/.gitconfig-*

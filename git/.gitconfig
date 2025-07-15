@@ -1,0 +1,4 @@
+[includeIf "gitdir/i:~/"]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir/i:~/Documents/repos/abi/"]
+  path = ~/.gitconfig-abi
