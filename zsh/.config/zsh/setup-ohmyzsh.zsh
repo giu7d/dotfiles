@@ -10,7 +10,17 @@ TYPEWRITTEN_CURSOR="underscore"
 TYPEWRITTEN_PROMPT_LAYOUT="singleline"
 
 # Setup Plugins
-plugins=(git zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+plugins=(
+  archlinux
+  asdf
+  gh
+  git 
+  npm
+  sdk
+  zsh-autosuggestions 
+  zsh-completions 
+  zsh-syntax-highlighting
+)
 
 # Init
 source $ZSH/oh-my-zsh.sh

@@ -1,3 +1,23 @@
 [submodule "tmux/.tmux/plugins/tpm"]
 	path = tmux/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+
+[submodule "zsh/.config/zsh/ohmyzsh"]
+	path = zsh/.config/zsh/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh
+
+[submodule "zsh/.config/zsh/ohmyzsh/custom/plugins/zsh-autosuggestions"]
+	path = zsh/.config/zsh/ohmyzsh/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+
+[submodule "zsh/.config/zsh/ohmyzsh/custom/plugins/zsh-completions"]
+	path = zsh/.config/zsh/ohmyzsh/custom/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
+
+[submodule "zsh/.config/zsh/ohmyzsh/custom/plugins/zsh-syntax-highlighting"]
+	path = zsh/.config/zsh/ohmyzsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+
+[submodule "zsh/.config/zsh/ohmyzsh/custom/themes/typewritten"]
+	path = zsh/.config/zsh/ohmyzsh/custom/themes/typewritten
+	url = https://github.com/reobin/typewritten
